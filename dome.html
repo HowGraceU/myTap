@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="zepto.min.js"></script>
+	<script type="text/javascript" src="myTap.js"></script>
+</head>
+<body>
+	<div id="a" style="width: 200px; height: 200px; background: red"></div>
+	<script type="text/javascript">
+		$(function(){
+			var a = $('#a');
+
+			new Tap(a, function(){
+				alert('tap');
+			});
+		})
+	</script>
+</body>
+</html>
